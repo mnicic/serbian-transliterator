@@ -1,27 +1,57 @@
-# SerbianTransliteratorDemo
+# SerbianTransliterator
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
+This is Angular library for transliterating from Serbian cyrilic to Serbian latinic, and vice versa.
 
-## Development server
+## Installation and how to use
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Let's install it:
 
-## Code scaffolding
+```bash
+npm install serbian-transliterator
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Import the library into a module:
 
-## Build
+```javascript
+import { SerbianTransliteratorModule } from 'serbian-transliterator';
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+...
 
-## Running unit tests
+@NgModule({
+  declarations: [ ...  ],
+  imports: [
+    ...
+    SerbianTransliteratorModule
+  ],
+  ...
+})
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Use it in HTML files:
 
-## Running end-to-end tests
+```html
+<p>latinic transliteration: <strong>{{ 'аутоматски' | transliterator }}</strong></p>
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+or with explicitly set transliterator:
+```html
+  <p>cyrilic transliteration: <strong>{{ 'ručno' | transliterator: cir }}</strong></p>
+```
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### More details
+
+Take a look into `./src/app/app.module.ts` and `./src/app/app.component.html` files.
+
+## About
+
+The library is developed to solve transliteration on [Značenje](https://znacenje.pravac.com) project, so you can use this website as demo. Apart of that, it is planned to be integrated on [CirLat](https://cirlat.pravac.com) and [Knjige](https://knjige.pravac.com).
+
+## Dev info
+
+The project is based on standard Angular CLI environment.
+
+### Can I participate?
+
+Yes. This library is developed in very short time to solve problem of transliteration on existing project. Thus, there are a lot of areas for an improvement. I would be happy if someone is willing to participare and to make any kind of improvements.
+

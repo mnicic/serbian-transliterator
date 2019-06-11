@@ -46,8 +46,3 @@ Take a look into `./src/app/app.module.ts` and `./src/app/app.component.html` fi
 ## About
 
 The library is developed to solve transliteration on [Značenje](https://znacenje.pravac.com) project, so you can use this website as demo. Apart of that, it is planned to be integrated on [CirLat](https://cirlat.pravac.com) and [Knjige](https://knjige.pravac.com).
-
-
-## Can I participate?
-
-Yes. This library is developed in very short time to solve problem of transliteration on existing project. Thus, there are a lot of areas for an improvement. I would be happy if someone is willing to participare and to make any kind of improvements.

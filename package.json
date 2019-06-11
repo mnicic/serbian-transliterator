@@ -1,6 +1,6 @@
 {
   "name": "serbian-transliterator-demo",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,6 +9,16 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "keywords": [
+    "angular",
+    "language",
+    "serbian",
+    "cyrilic",
+    "latinic",
+    "transliteration"
+  ],
+  "author": "Milorad Ničić",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.0.0",

@@ -1,6 +1,7 @@
 {
   "name": "serbian-transliterator",
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "author": "Milorad Ničić",
   "peerDependencies": {
     "@angular/common": "^8.0.0",
     "@angular/core": "^8.0.0"
