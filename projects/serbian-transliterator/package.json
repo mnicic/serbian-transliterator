@@ -1,7 +1,25 @@
 {
   "name": "serbian-transliterator",
   "version": "0.1.0",
-  "author": "Milorad Ničić",
+  "keywords": [
+    "angular",
+    "language",
+    "serbian",
+    "cyrilic",
+    "latinic",
+    "transliteration"
+  ],
+  "author": {
+    "email": "mnicic@gmail.com",
+    "name": "Milorad Ničić",
+    "url": "https://pravac.com"
+  },
+  "homepage": "https://github.com/mnicic/serbian-transliterator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mnicic/serbian-transliterator.git"
+  },
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^8.0.0",
     "@angular/core": "^8.0.0"

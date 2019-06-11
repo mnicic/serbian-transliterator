@@ -17,7 +17,16 @@
     "latinic",
     "transliteration"
   ],
-  "author": "Milorad Ničić",
+  "author": {
+    "email": "mnicic@gmail.com",
+    "name": "Milorad Ničić",
+    "url": "https://pravac.com"
+  },
+  "homepage": "https://github.com/mnicic/serbian-transliterator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mnicic/serbian-transliterator.git"
+  },
   "license": "MIT",
   "private": true,
   "dependencies": {
