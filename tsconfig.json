@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "serbian-transliterator": [
+        "dist/serbian-transliterator"
+      ],
+      "serbian-transliterator/*": [
+        "dist/serbian-transliterator/*"
+      ]
+    }
   }
 }

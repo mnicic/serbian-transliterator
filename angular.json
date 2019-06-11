@@ -114,6 +114,41 @@
           }
         }
       }
+    },
+    "serbian-transliterator": {
+      "projectType": "library",
+      "root": "projects/serbian-transliterator",
+      "sourceRoot": "projects/serbian-transliterator/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/serbian-transliterator/tsconfig.lib.json",
+            "project": "projects/serbian-transliterator/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/serbian-transliterator/src/test.ts",
+            "tsConfig": "projects/serbian-transliterator/tsconfig.spec.json",
+            "karmaConfig": "projects/serbian-transliterator/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/serbian-transliterator/tsconfig.lib.json",
+              "projects/serbian-transliterator/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "serbian-transliterator-demo"
 }
