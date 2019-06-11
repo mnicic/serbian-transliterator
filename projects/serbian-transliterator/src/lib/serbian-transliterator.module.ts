@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
-import { SerbianTransliteratorComponent } from './serbian-transliterator.component';
+import { SerbianTransliteratorPipe } from './serbian-transliterator.pipe';
 
 @NgModule({
-  declarations: [SerbianTransliteratorComponent],
-  imports: [
-  ],
-  exports: [SerbianTransliteratorComponent]
+  imports: [],
+  declarations: [SerbianTransliteratorPipe],
+  exports: [SerbianTransliteratorPipe]
 })
-export class SerbianTransliteratorModule { }
+export class SerbianTransliteratorModule {}
