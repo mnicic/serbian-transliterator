@@ -1,24 +1,53 @@
 # SerbianTransliterator
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.0.
+This is Angular library for transliterating from Serbian cyrilic to Serbian latinic, and vice versa.
 
-## Code scaffolding
+## Installation and how to use
 
-Run `ng generate component component-name --project serbian-transliterator` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project serbian-transliterator`.
-> Note: Don't forget to add `--project serbian-transliterator` or else it will be added to the default project in your `angular.json` file. 
+Let's install it:
 
-## Build
+```bash
+npm install serbian-transliterator
+```
 
-Run `ng build serbian-transliterator` to build the project. The build artifacts will be stored in the `dist/` directory.
+Import the library into a module:
 
-## Publishing
+```javascript
+import { SerbianTransliteratorModule } from 'serbian-transliterator';
 
-After building your library with `ng build serbian-transliterator`, go to the dist folder `cd dist/serbian-transliterator` and run `npm publish`.
+...
 
-## Running unit tests
+@NgModule({
+  declarations: [ ...  ],
+  imports: [
+    ...
+    SerbianTransliteratorModule
+  ],
+  ...
+})
+```
 
-Run `ng test serbian-transliterator` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Use it in HTML files:
 
-## Further help
+```html
+<p>latinic transliteration: <strong>{{ 'аутоматски' | transliterator }}</strong></p>
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+or with explicitly set transliterator:
+```html
+  <p>cyrilic transliteration: <strong>{{ 'ručno' | transliterator: cir }}</strong></p>
+```
+
+
+### More details
+
+Take a look into `./src/app/app.module.ts` and `./src/app/app.component.html` files.
+
+## About
+
+The library is developed to solve transliteration on [Značenje](https://znacenje.pravac.com) project, so you can use this website as demo. Apart of that, it is planned to be integrated on [CirLat](https://cirlat.pravac.com) and [Knjige](https://knjige.pravac.com).
+
+
+## Can I participate?
+
+Yes. This library is developed in very short time to solve problem of transliteration on existing project. Thus, there are a lot of areas for an improvement. I would be happy if someone is willing to participare and to make any kind of improvements.

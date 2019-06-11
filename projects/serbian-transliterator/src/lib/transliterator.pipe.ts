@@ -1,9 +1,9 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'translit'
+  name: 'transliterator'
 })
-export class SerbianTransliteratorPipe implements PipeTransform {
+export class TransliteratorPipe implements PipeTransform {
 
   transform(value: string, target?: any): any {
     const noTransliterateTriggers = ['w', 'q', 'x', 'y'];
