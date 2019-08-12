@@ -19,9 +19,9 @@ export class TransliteratorPipe implements PipeTransform {
     // tslint:disable-next-line:max-line-length
     const cirCharsUppercase = ['Ђ', 'Љ', 'Њ', 'Џ', 'А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ж', 'З', 'И', 'Ј', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'Ћ', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Ш'];
     // tslint:disable-next-line:max-line-length
-    const latCharsLowercase = ['dj', 'lj', 'nj', 'dž', 'a', 'b', 'v', 'g', 'd', 'e', 'ž', 'z', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'r', 's', 't', 'ć', 'u', 'f', 'h', 'c', 'č', 'š'];
+    const latCharsLowercase = ['đ', 'lj', 'nj', 'dž', 'a', 'b', 'v', 'g', 'd', 'e', 'ž', 'z', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'r', 's', 't', 'ć', 'u', 'f', 'h', 'c', 'č', 'š'];
     // tslint:disable-next-line:max-line-length
-    const latCharsUppercase = ['Dj', 'Lj', 'Nj', 'Dž', 'A', 'B', 'V', 'G', 'D', 'E', 'Ž', 'Z', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'Ć', 'U', 'F', 'H', 'C', 'Č', 'Š'];
+    const latCharsUppercase = ['Đ', 'Lj', 'Nj', 'Dž', 'A', 'B', 'V', 'G', 'D', 'E', 'Ž', 'Z', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'Ć', 'U', 'F', 'H', 'C', 'Č', 'Š'];
 
     const lat = latWords.concat(latCharsUppercase, latCharsLowercase);
     const cir = cirWords.concat(cirCharsUppercase, cirCharsLowercase);
