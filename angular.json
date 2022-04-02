@@ -127,7 +127,7 @@
       "prefix": "lib",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:build",
           "options": {
             "tsConfig": "projects/serbian-transliterator/tsconfig.lib.json",
             "project": "projects/serbian-transliterator/ng-package.json"
