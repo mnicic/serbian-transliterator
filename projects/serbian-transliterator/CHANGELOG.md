@@ -1,5 +1,9 @@
 # Changelog 
 
+# 0.2
+
+- Update to Angular 13
+
 # 0.1.1
 
 - Replaced to use *đ* instead of *dj*.
