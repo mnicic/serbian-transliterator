@@ -20,6 +20,9 @@
     "url": "https://github.com/mnicic/serbian-transliterator.git"
   },
   "license": "MIT",
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
   "peerDependencies": {
     "@angular/common": "^8.0.0",
     "@angular/core": "^8.0.0"
