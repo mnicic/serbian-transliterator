@@ -35,7 +35,7 @@ Use it in HTML files:
 
 or with explicitly set transliterator:
 ```html
-  <p>cyrilic transliteration: <strong>{{ 'ručno' | transliterator: cir }}</strong></p>
+  <p>cyrilic transliteration: <strong>{{ 'ručno' | transliterator: 'cir' }}</strong></p>
 ```
 
 
